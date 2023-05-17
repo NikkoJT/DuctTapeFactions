@@ -85,6 +85,7 @@ class njt_nlaw_disposable : launch_nlaw_f
 };
 
 class njt_nlaw_disposable_spent : launch_nlaw_f
+{
 	displayName = "Rb 57 (Spent)";
 	descriptionShort = "This weapon is expended and cannot be reused.";
 	scope = 1;
@@ -103,3 +104,4 @@ class njt_nlaw_disposable_spent : launch_nlaw_f
 	{
 		class libTextDesc = "The Rb 57 is a Swedish-made disposable light anti-tank weapon. It is equipped with a visible-light sensor capable of locking on to targets within up to 800 metres, and can be fired in either direct-attack or top-attack mode. Once fired, it cannot be reused.";
 	};
+};

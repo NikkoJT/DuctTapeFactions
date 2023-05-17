@@ -1,4 +1,4 @@
-class SwedishNames
+class njt_names_sweden
 {
 	class FirstNames
 	{

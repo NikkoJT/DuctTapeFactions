@@ -44,7 +44,7 @@ class cfgVehicles
 	class StaticWeapon;
 	class StaticMGWeapon;
 	class HMG_02_base_F;
-	class B_HMG_02_F
+	class B_HMG_02_F : B_HMG_02_base_F
 	{
 		class assembleInfo;
 		class animationSources

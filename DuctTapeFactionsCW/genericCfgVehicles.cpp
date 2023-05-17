@@ -32,8 +32,8 @@ class All;
 	{
 		class animationSources : animationSources
 		{
-			class hide_rail : hide_rail;
-			class hide_shield : hide_shield;
+			class hide_rail;
+			class hide_shield;
 		};
 	};
 	

@@ -164,8 +164,8 @@ class cfgGroups
 	class West
 	{
 		class njt_dtfcw_sweden
-		name = "Sweden 2000s";
 		{
+			name = "Sweden 2000s";
 			#include "sweden\swedenCfgGroups.cpp"
 		};
 	};

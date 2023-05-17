@@ -24,12 +24,12 @@ class njt_dtfcw_sweden_apc_01_wheeled_cannon_f_base : B_APC_Wheeled_01_cannon_F
 	{
 		class MainTurret : MainTurret
 		{
-			class ViewOptics : ViewOptics;
+			class ViewOptics;
 			class Turrets : Turrets
 			{
 				class CommanderOptics : CommanderOptics
 				{
-					class ViewOptics : ViewOptics;
+					class ViewOptics;
 				};
 			};
 		};

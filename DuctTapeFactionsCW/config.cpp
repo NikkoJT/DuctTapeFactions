@@ -37,7 +37,7 @@ class cfgVehicles
 	class Bag_Base;
 	class Weapon_Bag_Base;
 	class B_HMG_02_support_F;
-	class B_HMG_02_weapon_F
+	class B_HMG_02_weapon_F : Weapon_Bag_Base
 	{
 		class assembleInfo;
 	};
@@ -164,6 +164,7 @@ class cfgGroups
 	class West
 	{
 		class njt_dtfcw_sweden
+		name = "Sweden 2000s";
 		{
 			#include "sweden\swedenCfgGroups.cpp"
 		};

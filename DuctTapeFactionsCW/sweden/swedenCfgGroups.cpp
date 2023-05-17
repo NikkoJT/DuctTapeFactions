@@ -1,4 +1,5 @@
 class Infantry
+name = "Infantry";
 {
 	class njt_dtfcw_sweden_fireteam
 	{

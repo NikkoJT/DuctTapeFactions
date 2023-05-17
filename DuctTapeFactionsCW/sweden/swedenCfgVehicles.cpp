@@ -4,16 +4,16 @@ class B_APC_Wheeled_01_cannon_F;
 class njt_dtfcw_sweden_apc_01_wheeled_cannon_f_base : B_APC_Wheeled_01_cannon_F
 {
 	scope = 0;
-	class Turrets
+	class Turrets : Turrets
 	{
-		class MainTurret
+		class MainTurret : MainTurret
 		{
-			class ViewOptics;
-			class Turrets
+			class ViewOptics : ViewOptics;
+			class Turrets : Turrets
 			{
-				class CommanderOptics
+				class CommanderOptics : CommanderOptics;
 				{
-					class ViewOptics;
+					class ViewOptics : ViewOptics;
 				};
 			};
 		};

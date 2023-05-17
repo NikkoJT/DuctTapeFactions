@@ -20,18 +20,34 @@ class All;
 	class B_HMG_02_weapon_F;
 	class StaticWeapon;
 	class StaticMGWeapon;
-	class HMG_02_base_F;
+	class HMG_02_base_F : StaticMGWeapon
+	{
+		class animationSources
+		{
+			class hide_rail;
+			class hide_shield;
+		};
+	};
 	class B_HMG_02_F;
+	{
+		class animationSources : animationSources
+		{
+			class hide_rail : hide_rail;
+			class hide_shield : hide_shield;
+		};
+	};
 	
 	class njt_dtfcw_hmg_02_f_base : B_HMG_02_F
 	{
 		scope = 0;
+		/*
 		class assembleInfo;
 		class animationSources
 		{
 			class hide_rail;
 			class hide_shield;
 		};
+		*/
 	}
 	
 	class njt_dtfcw_hmg_02_bare : njt_dtfcw_hmg_02_f_base

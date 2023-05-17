@@ -36,6 +36,7 @@ class njt_dtfcw_sweden_apc_01_wheeled_cannon_f_base : B_APC_Wheeled_01_cannon_F
 	};
 };
 
+// Everything I don't explicitly define here is missing from the final config
 class njt_dtfcw_sweden_apc_01_wheeled_cannon_f : njt_dtfcw_sweden_apc_01_wheeled_cannon_f_base
 {
 	displayName = "Patria AMV";
@@ -122,6 +123,7 @@ class njt_dtfcw_sweden_apc_01_wheeled_cannon_f : njt_dtfcw_sweden_apc_01_wheeled
 	
 };
 
+// All this stuff works fine
 class njt_dtfcw_sweden_base : SoldierWB
 {
 	displayName = "Swede";

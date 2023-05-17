@@ -1,5 +1,5 @@
 class APC_Wheeled_01_base_F;
-class B_APC_Wheeled_01_base_F;
+class B_APC_Wheeled_01_base_F
 {
 	class Turrets
 	{

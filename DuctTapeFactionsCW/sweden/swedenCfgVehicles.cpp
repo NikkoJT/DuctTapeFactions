@@ -1,5 +1,6 @@
 class APC_Wheeled_01_base_F;
-class B_APC_Wheeled_01_base_F
+class B_APC_Wheeled_01_base_F;
+class B_APC_Wheeled_01_cannon_F : B_APC_Wheeled_01_base_F
 {
 	class Turrets
 	{
@@ -16,7 +17,6 @@ class B_APC_Wheeled_01_base_F
 		};
 	};
 };
-class B_APC_Wheeled_01_cannon_F;
 class njt_dtfcw_sweden_apc_01_wheeled_cannon_f_base : B_APC_Wheeled_01_cannon_F
 {
 	scope = 0;

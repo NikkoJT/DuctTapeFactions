@@ -29,15 +29,7 @@ class All;
 			class hide_shield;
 		};
 	};
-	class B_HMG_02_F : HMG_02_base_F
-	{
-		class assembleInfo;
-		class animationSources : animationSources
-		{
-			class hide_rail;
-			class hide_shield;
-		};
-	};
+	class B_HMG_02_F;
 	
 	class njt_dtfcw_hmg_02_f_base : B_HMG_02_F
 	{

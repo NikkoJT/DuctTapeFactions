@@ -61,10 +61,11 @@ class njt_dtfcw_hmg_02_bare : njt_dtfcw_hmg_02_f_base
 	faction = "njt_fc_sweden";
 	class assembleInfo : assembleInfo
 	// There is a "primary" property in assembleInfo. I do not change it. I am inheriting assembleInfo all the way down the chain.
-	// But the "primary" property is still not defined in the final config, and this causes an error. I don't understand.
+	// But there is still a "no entry ... primary" error on load. Even though it does appear in the config viewer.
 	{
 		dissasembleTo[] = {"njt_dtfcw_bag_tripodLow","njt_dtfcw_bag_hmg_02_bare"};
 	};
+	// Everything I don't explicitly define is missing from here in the final config
 	class animationSources : animationSources
 	{
 		class hide_rail : hide_rail

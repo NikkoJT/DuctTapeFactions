@@ -36,7 +36,6 @@ class njt_dtfcw_sweden_apc_01_wheeled_cannon_f_base : B_APC_Wheeled_01_cannon_F
 	};
 };
 
-// Everything I don't explicitly define here is missing from the final config
 class njt_dtfcw_sweden_apc_01_wheeled_cannon_f : njt_dtfcw_sweden_apc_01_wheeled_cannon_f_base
 {
 	displayName = "Patria AMV";
@@ -46,6 +45,8 @@ class njt_dtfcw_sweden_apc_01_wheeled_cannon_f : njt_dtfcw_sweden_apc_01_wheeled
 		"A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_base_olive_CO.paa","A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_adds_olive_co.paa","A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_tows_olive_co.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","a3\Armor_F\Data\cage_olive_CO.paa"
 	};
 	crew = "njt_dtfcw_sweden_crew";
+	// Everything I don't explicitly define here is missing from the final config
+	// Plenty of "missing animation source" etc rpt spam
 	class Turrets : Turrets
 	{
 		class MainTurret : MainTurret

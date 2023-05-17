@@ -17,26 +17,21 @@ class All;
 	class Bag_Base;
 	class Weapon_Bag_Base;
 	class B_HMG_02_support_F;
-	class B_HMG_02_weapon_F : Weapon_Bag_Base
-	{
-		class assembleInfo;
-	};
+	class B_HMG_02_weapon_F;
 	class StaticWeapon;
 	class StaticMGWeapon;
 	class HMG_02_base_F;
-	class B_HMG_02_F : HMG_02_base_F
+	class B_HMG_02_F;
+	
+	class njt_dtfcw_hmg_02_f_base : B_HMG_02_F
 	{
+		scope = 0;
 		class assembleInfo;
 		class animationSources
 		{
 			class hide_rail;
 			class hide_shield;
 		};
-	};
-	
-	class njt_dtfcw_hmg_02_f_base : B_HMG_02_F
-	{
-		scope = 0;
 	}
 	
 	class njt_dtfcw_hmg_02_bare : njt_dtfcw_hmg_02_f_base
@@ -86,6 +81,7 @@ class All;
 	class njt_dtfcw_HMG_02_weapon_F_base : B_HMG_02_weapon_F
 	{
 		scope = 0;
+		class assembleInfo;
 	};
 
 	class njt_dtfcw_bag_HMG_02_bare : njt_dtfcw_HMG_02_weapon_F_base

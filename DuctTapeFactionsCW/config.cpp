@@ -158,3 +158,14 @@ class cfgFactionClasses
 		priority = 1;
 	};
 };
+
+class cfgGroups
+{
+	class West
+	{
+		class njt_dtfcw_sweden
+		{
+			#include "sweden\swedenCfgGroups.cpp"
+		};
+	};
+};

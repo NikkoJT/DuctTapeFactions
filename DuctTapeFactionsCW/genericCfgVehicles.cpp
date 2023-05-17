@@ -20,6 +20,8 @@ class B_HMG_02_support_F;
 class B_HMG_02_weapon_F;
 class StaticWeapon;
 class StaticMGWeapon;
+// Assembled turret classes as used in vanilla
+// It feels like I shouldn't have to do this manual definition every single step of the way
 class HMG_02_base_F : StaticMGWeapon
 {
 	class assembleInfo;
@@ -29,8 +31,17 @@ class HMG_02_base_F : StaticMGWeapon
 		class hide_shield;
 	};
 };
-class B_HMG_02_F;
+class B_HMG_02_F : HMG_02_base_F
+{
+	class assembleInfo;
+	class animationSources : animationSources
+	{
+		class hide_rail;
+		class hide_shield;
+	};
+};
 
+// My assembled turret baseclass
 class njt_dtfcw_hmg_02_f_base : B_HMG_02_F
 {
 	scope = 0;
@@ -44,12 +55,14 @@ class njt_dtfcw_hmg_02_f_base : B_HMG_02_F
 	*/
 }
 
+// My assembled turret live class
 class njt_dtfcw_hmg_02_bare : njt_dtfcw_hmg_02_f_base
 {
 	scope = 2;
 	crew = "njt_dtfcw_sweden_rifleman";
 	faction = "njt_fc_sweden";
 	class assembleInfo : assembleInfo
+	// There is a 
 	{
 		dissasembleTo[] = {"njt_dtfcw_bag_tripodLow","njt_dtfcw_bag_hmg_02_bare"};
 	};
@@ -67,11 +80,13 @@ class njt_dtfcw_hmg_02_bare : njt_dtfcw_hmg_02_f_base
 	
 };
 
+// My tripod base class
 class njt_dtfcw_HMG_02_support_f_base : B_HMG_02_support_F
 {
 	scope = 0;
 };
 
+// My tripod live class
 class njt_dtfcw_bag_tripodLow : njt_dtfcw_HMG_02_support_f_base
 {
 	displayName = "Folded Tripod (Low, Green)";
@@ -88,12 +103,14 @@ class njt_dtfcw_bag_tripodLow : njt_dtfcw_HMG_02_support_f_base
 	dlc = "GM";
 };
 
+// My weaponbag base class
 class njt_dtfcw_HMG_02_weapon_F_base : B_HMG_02_weapon_F
 {
 	scope = 0;
 	class assembleInfo;
 };
 
+// My weaponbag live class
 class njt_dtfcw_bag_HMG_02_bare : njt_dtfcw_HMG_02_weapon_F_base
 {
 	displayName = "M2 HMG .50 (Bare)";

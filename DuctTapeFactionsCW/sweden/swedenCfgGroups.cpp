@@ -1,6 +1,6 @@
 class Infantry
-name = "Infantry";
 {
+	name = "Infantry";
 	class njt_dtfcw_sweden_fireteam
 	{
 		faction = "njt_fc_sweden";

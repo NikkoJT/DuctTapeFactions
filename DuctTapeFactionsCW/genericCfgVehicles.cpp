@@ -22,6 +22,7 @@ class All;
 	class StaticMGWeapon;
 	class HMG_02_base_F : StaticMGWeapon
 	{
+		class assembleInfo;
 		class animationSources
 		{
 			class hide_rail;
@@ -30,6 +31,7 @@ class All;
 	};
 	class B_HMG_02_F : HMG_02_base_F
 	{
+		class assembleInfo;
 		class animationSources : animationSources
 		{
 			class hide_rail;

@@ -28,7 +28,7 @@ class All;
 			class hide_shield;
 		};
 	};
-	class B_HMG_02_F
+	class B_HMG_02_F : HMG_02_base_F
 	{
 		class animationSources : animationSources
 		{

@@ -45,14 +45,12 @@ class B_HMG_02_F : HMG_02_base_F
 class njt_dtfcw_hmg_02_f_base : B_HMG_02_F
 {
 	scope = 0;
-	/*
 	class assembleInfo;
 	class animationSources
 	{
 		class hide_rail;
 		class hide_shield;
 	};
-	*/
 }
 
 // My assembled turret live class
@@ -62,7 +60,7 @@ class njt_dtfcw_hmg_02_bare : njt_dtfcw_hmg_02_f_base
 	crew = "njt_dtfcw_sweden_rifleman";
 	faction = "njt_fc_sweden";
 	class assembleInfo : assembleInfo
-	// There is a 
+	// There is a "primary" property in assembleInfo. I do not change it. I am inheriting assembleInfo all the way down the chain.
 	{
 		dissasembleTo[] = {"njt_dtfcw_bag_tripodLow","njt_dtfcw_bag_hmg_02_bare"};
 	};

@@ -15,7 +15,7 @@ class B_APC_Wheeled_01_cannon_F : B_APC_Wheeled_01_base_F
 	{
 		class MainTurret : MainTurret
 		{
-			class viewOptics;
+			class OpticsIn;
 			class Turrets;
 		};
 	};
@@ -28,7 +28,12 @@ class njt_dtfcw_sweden_apc_01_wheeled_cannon_f_base : B_APC_Wheeled_01_cannon_F
 	{
 		class MainTurret : MainTurret
 		{
-			class viewOptics;
+			class OpticsIn : OpticsIn
+			{
+				class Medium;
+				class Narrow;
+				class Wide;
+			};
 			class Turrets : Turrets
 			{
 				class CommanderOptics;
@@ -49,17 +54,39 @@ class njt_dtfcw_sweden_apc_01_wheeled_cannon_f : njt_dtfcw_sweden_apc_01_wheeled
 	{
 		class MainTurret : MainTurret
 		{
-			class ViewOptics : ViewOptics
+			class OpticsIn : OpticsIn
 			{
-				thermalResolution[] = {0.0,720,0.5,720,1.0,240};
+				class Wide : Wide
+				{
+					thermalResolution[] = {720};
+				};
+				class Medium : Medium
+				{
+					thermalResolution[] = {720};
+				};
+				class Narrow : Narrow
+				{
+					thermalResolution[] = {360};
+				};
 			};
 			class Turrets : Turrets
 			{
 				class CommanderOptics : CommanderOptics
 				{
-					class ViewOptics : ViewOptics
+					class OpticsIn : OpticsIn
 					{
-						thermalResolution[] = {0.0,720,0.5,720,1.0,360};
+						class Narrow : Narrow
+						{
+							thermalResolution[] = {360};
+						};
+						class Medium : Medium
+						{
+							thermalResolution[] = {720};
+						};
+						class Wide : Wide
+						{
+							thermalResolution[] = {900};
+						};
 					};
 				};
 			};

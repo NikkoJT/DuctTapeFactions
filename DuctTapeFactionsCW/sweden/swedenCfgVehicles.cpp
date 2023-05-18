@@ -75,17 +75,17 @@ class njt_dtfcw_sweden_apc_01_wheeled_cannon_f : njt_dtfcw_sweden_apc_01_wheeled
 				{
 					class OpticsIn : OpticsIn
 					{
-						class Narrow : Narrow
+						class Wide : Wide
 						{
-							thermalResolution[] = {360};
+							thermalResolution[] = {900};
 						};
 						class Medium : Medium
 						{
 							thermalResolution[] = {720};
 						};
-						class Wide : Wide
+						class Narrow : Narrow
 						{
-							thermalResolution[] = {900};
+							thermalResolution[] = {360};
 						};
 					};
 				};

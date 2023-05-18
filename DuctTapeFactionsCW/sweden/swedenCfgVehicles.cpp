@@ -1072,7 +1072,7 @@ class gm_ge_army_bo105p1m_vbh_swooper;
 class njt_dtfcw_sweden_bo105 : gm_ge_army_bo105p1m_vbh_swooper
 {
 	faction = "njt_fc_sweden";
-	gm_insignias_default_nation = "njt_dtfcw_insignia_sweden";
+	gm_insigniasdefaultnation = "njt_dtfcw_insignia_sweden";
 	gm_licenseplate = "gm_ge_civ_wht";
 	gm_licensePlateDefaultDigits = "    ##";
 	crew = "njt_dtfcw_sweden_helicrew";

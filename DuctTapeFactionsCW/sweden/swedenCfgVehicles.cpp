@@ -1,36 +1,37 @@
-class APC_Wheeled_01_base_F;
-class B_APC_Wheeled_01_base_F;
+class APC_Wheeled_01_base_F : Wheeled_APC_F
+{
+	class Turrets;
+};
+class B_APC_Wheeled_01_base_F : APC_Wheeled_01_base_F
+{
+	class Turrets : Turrets
+	{
+		class MainTurret;
+	};
+};
 class B_APC_Wheeled_01_cannon_F : B_APC_Wheeled_01_base_F
 {
-	class Turrets
+	class Turrets : Turrets
 	{
-		class MainTurret
+		class MainTurret : MainTurret
 		{
-			class ViewOptics;
-			class Turrets
-			{
-				class CommanderOptics
-				{
-					class viewOptics;
-				};
-			};
+			class viewOptics;
+			class Turrets;
 		};
 	};
 };
 class njt_dtfcw_sweden_apc_01_wheeled_cannon_f_base : B_APC_Wheeled_01_cannon_F
 {
 	scope = 0;
+	faction = "njt_fc_sweden";
 	class Turrets : Turrets
 	{
 		class MainTurret : MainTurret
 		{
-			class ViewOptics;
+			class viewOptics;
 			class Turrets : Turrets
 			{
-				class CommanderOptics : CommanderOptics
-				{
-					class ViewOptics;
-				};
+				class CommanderOptics;
 			};
 		};
 	};
@@ -40,7 +41,6 @@ class njt_dtfcw_sweden_apc_01_wheeled_cannon_f : njt_dtfcw_sweden_apc_01_wheeled
 {
 	displayName = "Patria AMV";
 	scope = 2;
-	faction = "njt_fc_sweden";
 	hiddenSelectionsTextures[] = {
 		"A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_base_olive_CO.paa","A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_adds_olive_co.paa","A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_tows_olive_co.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","a3\Armor_F\Data\cage_olive_CO.paa"
 	};

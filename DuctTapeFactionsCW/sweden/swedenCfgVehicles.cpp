@@ -53,7 +53,7 @@ class njt_dtfcw_sweden_apc_01_wheeled_cannon_f : njt_dtfcw_sweden_apc_01_wheeled
 		{
 			class ViewOptics : ViewOptics
 			{
-				thermalResolution[] = {720};
+				thermalResolution[] = {0.0,720,1.0,512};
 			};
 			class Turrets : Turrets
 			{
@@ -61,7 +61,7 @@ class njt_dtfcw_sweden_apc_01_wheeled_cannon_f : njt_dtfcw_sweden_apc_01_wheeled
 				{
 					class ViewOptics : ViewOptics
 					{
-						thermalResolution[] = {720};
+						thermalResolution[] = {0.0,720,1.0,512};
 					};
 				};
 			};

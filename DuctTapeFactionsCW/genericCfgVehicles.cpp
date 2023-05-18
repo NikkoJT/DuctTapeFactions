@@ -19,7 +19,6 @@ class Weapon_Bag_Base;
 class B_HMG_02_support_F;
 class B_HMG_02_weapon_F;
 // Assembled turret classes as used in vanilla
-// It feels like I shouldn't have to do this manual definition every single step of the way
 class HMG_02_base_F;
 class B_HMG_02_F : HMG_02_base_F
 {
@@ -45,12 +44,9 @@ class njt_dtfcw_hmg_02_bare : njt_dtfcw_hmg_02_f_base
 	crew = "njt_dtfcw_sweden_rifleman";
 	faction = "njt_fc_sweden";
 	class assembleInfo : assembleInfo
-	// There is a "primary" property in assembleInfo. I do not change it. I am inheriting assembleInfo all the way down the chain.
-	// But there is still a "no entry ... primary" error on load. Even though it does appear in the config viewer.
 	{
 		dissasembleTo[] = {"njt_dtfcw_bag_tripodLow","njt_dtfcw_bag_hmg_02_bare"};
 	};
-	// Everything I don't explicitly define is missing from here in the final config
 	class animationSources : animationSources
 	{
 		class hide_rail : hide_rail
@@ -113,7 +109,7 @@ class njt_dtfcw_bag_HMG_02_bare : njt_dtfcw_HMG_02_weapon_F_base
 	class assembleInfo : assembleInfo
 	{
 		base[] = {
-			"B_HMG_02_support_F","O_HMG_02_support_F","I_HMG_02_support_F","I_E_HMG_02_support_F","I_C_HMG_02_support_F","I_G_HMG_02_support_F","O_G_HMG_02_support_F","B_G_HMG_02_support_F"
+			"B_HMG_02_support_F","O_HMG_02_support_F","I_HMG_02_support_F","I_E_HMG_02_support_F","I_C_HMG_02_support_F","I_G_HMG_02_support_F","O_G_HMG_02_support_F","B_G_HMG_02_support_F", "njt_dtfcw_bag_tripodLow"
 		};
 		assembleTo = "njt_dtfcw_hmg_02_bare";
 	};

@@ -1,11 +1,11 @@
 class CfgPatches
 {
-	class njt_dtf_cw
+	class njt_dtfcw_sweden
 	{
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.2;
-		requiredAddons[] = { "gm_weapons_attachments_side_surefire","CSLA", "A3_Weapons_F_Launchers_NLAW", "A3_Armor_F_Beta_APC_Wheeled_01","A3_Static_F_HMG_02"};
+		requiredAddons[] = { "gm_weapons_attachments_side_surefire","CSLA", "A3_Weapons_F_Launchers_NLAW", "A3_Armor_F_Beta_APC_Wheeled_01","A3_Static_F_HMG_02","njt_dtfcw_assets"};
 		author = "NikkoJT";
 	};
 };
@@ -19,18 +19,15 @@ class CfgPatches
 
 class cfgVehicles
 {
-	#include "genericCfgVehicles.cpp"
 	
-	#include "sweden\swedenCfgVehicles.cpp"
-
-	
+	#include "swedenCfgVehicles.cpp"
 };
 
 class cfgWorlds
 {
 	class genericNames
 	{
-		#include "sweden\swedenGenericNames.cpp"
+		#include "swedenGenericNames.cpp"
 	};
 };
 
@@ -46,13 +43,13 @@ class cfgWeapons
 	class Launcher;
 	class Launcher_Base_F;
 	
-	#include "sweden\swedenCfgWeapons.cpp"
+	#include "swedenCfgWeapons.cpp"
 };
 
 class cfgMagazines
 {
 	
-	#include "sweden\swedenCfgMagazines.cpp"
+	#include "swedenCfgMagazines.cpp"
 	
 };
 
@@ -74,7 +71,7 @@ class cfgGroups
 		class njt_dtfcw_sweden
 		{
 			name = "Sweden 2000s";
-			#include "sweden\swedenCfgGroups.cpp"
+			#include "swedenCfgGroups.cpp"
 		};
 	};
 };

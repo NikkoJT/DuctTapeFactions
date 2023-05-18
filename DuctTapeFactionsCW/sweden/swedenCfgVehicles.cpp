@@ -1,3 +1,25 @@
+class All;
+class AllVehicles;
+class Land;
+class Man;
+class CAManBase;
+class SoldierWB;
+class SoldierEB;
+class SoldierGB;
+class LandVehicle;
+class Car;
+class Car_F;
+class Wheeled_APC_F;
+class Static;
+class Building;
+class Strategic;
+class ReammoBox;
+class Bag_Base;
+class Weapon_Bag_Base;
+class B_HMG_02_support_F;
+class B_HMG_02_weapon_F;
+
+
 class APC_Wheeled_01_base_F : Wheeled_APC_F
 {
 	class Turrets;
@@ -186,25 +208,6 @@ class njt_dtfcw_B_Kitbag_sgg_MAAWS : B_Kitbag_sgg
 		{
 			count = 2;
 			magazine = "MRAWS_HE_F"
-		};
-	};
-};
-
-class gm_ge_backpack_sem35_oli;
-class njt_dtfcw_gm_ge_backpack_sem35_oli_RTO : gm_ge_backpack_sem35_oli
-{
-	scope = 1;
-	class TransportMagazines
-	{
-		class _xx_SmokeShellRed
-		{
-			count = 3;
-			magazine = "SmokeShellRed"
-		};
-		class _xx_SmokeShellGreen
-		{
-			count = 3;
-			magazine = "SmokeShellGreen"
 		};
 	};
 };
@@ -638,7 +641,7 @@ class njt_dtfcw_sweden_rifleman_rto : njt_dtfcw_sweden_soldier_base
 {
 	displayName = "RTO";
 	scope = 2;
-	backpack = "njt_dtfcw_gm_ge_backpack_sem35_oli_RTO";
+	backpack = "gm_ge_backpack_sem35_oli";
 	weapons[] += {
 		njt_gm_g3a4a1_ris_blk_holo,
 		hgun_P07_blk_F
@@ -652,14 +655,18 @@ class njt_dtfcw_sweden_rifleman_rto : njt_dtfcw_sweden_soldier_base
 		ITEM_2(gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk),
 		ITEM_2(16Rnd_9x21_Mag),
 		ITEM_2(gm_handgrenade_frag_dm51a1),
-		ITEM_2(SmokeShell)
+		ITEM_2(SmokeShell),
+		ITEM_3(SmokeShellRed),
+		ITEM_3(SmokeShellGreen)
 	};
 	respawnMagazines[] += {
 		ITEM_4(gm_20Rnd_762x51mm_B_DM111_g3_blk),
 		ITEM_2(gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk),
 		ITEM_2(16Rnd_9x21_Mag),
 		ITEM_2(gm_handgrenade_frag_dm51a1),
-		ITEM_2(SmokeShell)
+		ITEM_2(SmokeShell),
+		ITEM_3(SmokeShellRed),
+		ITEM_3(SmokeShellGreen)
 	};
 	linkedItems[] += {
 		gm_ge_headgear_beret_crew_blk,
@@ -690,7 +697,7 @@ class njt_dtfcw_sweden_crew : njt_dtfcw_sweden_soldier_base
 		ITEM_2(gm_20Rnd_762x51mm_B_DM111_g3_blk),
 		ITEM_2(gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk),
 		ITEM_2(16Rnd_9x21_Mag),
-		ITEM_2(SmokeShell),
+		ITEM_2(SmokeShell)
 	};
 	respawnMagazines[] += {
 		ITEM_2(gm_20Rnd_762x51mm_B_DM111_g3_blk),
@@ -712,7 +719,7 @@ class njt_dtfcw_sweden_jtac : njt_dtfcw_sweden_soldier_base
 {
 	displayName = "JTAC";
 	scope = 2;
-	backpack = "njt_dtfcw_gm_ge_backpack_sem35_oli_RTO";
+	backpack = "gm_ge_backpack_sem35_oli";
 	uniformClass = "U_B_CTRG_Soldier_urb_3_F";
 	weapons[] += {
 		njt_gm_g3a4a1_ris_blk_holo_laser,
@@ -729,16 +736,20 @@ class njt_dtfcw_sweden_jtac : njt_dtfcw_sweden_soldier_base
 		ITEM_2(gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk),
 		ITEM_2(16Rnd_9x21_Mag),
 		ITEM_2(gm_handgrenade_frag_dm51a1),
-		ITEM_2(SmokeShell)
-		Laserbatteries
+		ITEM_2(SmokeShell),
+		Laserbatteries,
+		ITEM_3(SmokeShellRed),
+		ITEM_3(SmokeShellGreen)
 	};
 	respawnMagazines[] += {
 		ITEM_4(gm_20Rnd_762x51mm_B_DM111_g3_blk),
 		ITEM_2(gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk),
 		ITEM_2(16Rnd_9x21_Mag),
 		ITEM_2(gm_handgrenade_frag_dm51a1),
-		ITEM_2(SmokeShell)
-		Laserbatteries
+		ITEM_2(SmokeShell),
+		Laserbatteries,
+		ITEM_3(SmokeShellRed),
+		ITEM_3(SmokeShellGreen)
 	};
 	linkedItems[] += {
 		gm_ge_headgear_beret_crew_blk,
@@ -774,14 +785,14 @@ class njt_dtfcw_sweden_assistant_maaws : njt_dtfcw_sweden_soldier_base
 		ITEM_2(gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk),
 		ITEM_2(16Rnd_9x21_Mag),
 		ITEM_2(gm_handgrenade_frag_dm51a1),
-		ITEM_2(SmokeShell),
+		ITEM_2(SmokeShell)
 	};
 	respawnMagazines[] += {
 		ITEM_4(gm_20Rnd_762x51mm_B_DM111_g3_blk),
 		ITEM_2(gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk),
 		ITEM_2(16Rnd_9x21_Mag),
 		ITEM_2(gm_handgrenade_frag_dm51a1),
-		ITEM_2(SmokeShell),
+		ITEM_2(SmokeShell)
 	};
 	linkedItems[] += {
 		gm_dk_headgear_m96_oli,

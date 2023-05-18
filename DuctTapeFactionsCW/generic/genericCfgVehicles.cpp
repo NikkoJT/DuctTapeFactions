@@ -70,8 +70,9 @@ class njt_dtfcw_hmg_02_support_f_base : B_HMG_02_support_F
 // My tripod live class
 class njt_dtfcw_bag_tripodlow : njt_dtfcw_hmg_02_support_f_base
 {
-	displayName = "Folded Tripod (Low, Green)";
+	displayName = "Folded Tripod M2 HMG .50 (Low, Green)";
 	scope = 2;
+	scopeArsenal = 2;
 	faction = "BLU_F";
 	hiddenSelections[] = {
 		"tex_01","tex_02","cord_01","rank_01","armband_l","armband_r","clan","insignia","letter_01","letter_02","letter_03","letter_04","letter_05","letter_06","letter_07","letter_08","letter_09","letter_10"
@@ -94,8 +95,9 @@ class njt_dtfcw_hmg_02_weapon_f_base : B_HMG_02_weapon_F
 // My weaponbag live class
 class njt_dtfcw_bag_hmg_02_bare : njt_dtfcw_hmg_02_weapon_f_base
 {
-	displayName = "M2 HMG .50 (Bare)";
+	displayName = "Dismantled M2 HMG .50 (Bare, Green)";
 	scope = 2;
+	scopeArsenal = 2;
 	faction = "BLU_F";
 	hiddenSelections[] = {
 		"tex_01","tex_02","cord_01","rank_01","armband_l","armband_r","clan","insignia","letter_01","letter_02","letter_03","letter_04","letter_05","letter_06","letter_07","letter_08","letter_09","letter_10"

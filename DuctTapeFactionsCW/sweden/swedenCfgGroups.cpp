@@ -317,3 +317,108 @@ class Support
 		};
 	};
 };
+
+class SF
+{
+	name = "Special Forces";
+	
+	class njt_dtfcw_sweden_sfteam
+	{
+		faction = "njt_fc_sweden";
+		icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
+		name = "Ranger Team";
+		side = 1;
+		class Unit0
+		{
+			position[] = {0,0,0};
+			rank = "SERGEANT";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfteamleader";
+		};
+		class Unit1
+		{
+			position[] = {5,-5,0};
+			rank = "CORPORAL";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfmachinegunner";
+		};
+		class Unit2
+		{
+			position[] = {-5,-5,0};
+			rank = "CORPORAL";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfantitank_nlaw";
+		};
+		class Unit3
+		{
+			position[] = {10,-10,0};
+			rank = "PRIVATE";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfsoldier";
+		};
+	};
+	
+	class njt_dtfcw_sweden_sfsquad
+	{
+		faction = "njt_fc_sweden";
+		icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
+		name = "Ranger Squad";
+		side = 1;
+		class Unit0
+		{
+			position[] = {0,0,0};
+			rank = "LIEUTENANT";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfteamleader";
+		};
+		class Unit1
+		{
+			position[] = {5,-5,0};
+			rank = "SERGEANT";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfmachinegunner";
+		};
+		class Unit2
+		{
+			position[] = {-5,-5,0};
+			rank = "CORPORAL";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfantitank_nlaw";
+		};
+		class Unit3
+		{
+			position[] = {10,-10,0};
+			rank = "CORPORAL";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfmedic";
+		};
+		class Unit4
+		{
+			position[] = {-10,-10,0};
+			rank = "PRIVATE";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfjtac";
+		};
+		class Unit5
+		{
+			position[] = {15,-15,0};
+			rank = "PRIVATE";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfantitank_nlaw";
+		};
+		class Unit6
+		{
+			position[] = {-15,-15,0};
+			rank = "PRIVATE";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfmarksman";
+		};
+		class Unit7
+		{
+			position[] = {-15,-15,0};
+			rank = "PRIVATE";
+			side = 1;
+			vehicle = "njt_dtfcw_sweden_sfsoldier";
+		};
+	};
+};

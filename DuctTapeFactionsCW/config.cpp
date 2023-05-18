@@ -12,6 +12,7 @@ class CfgPatches
 
 // Macros
 #define ITEM_2(a) a, a
+#define ITEM_2(a) a, a, a
 #define ITEM_4(a) a, a, a, a
 #define ITEM_6(a) a, a, a, a, a, a
 
@@ -75,5 +76,18 @@ class cfgGroups
 			name = "Sweden 2000s";
 			#include "sweden\swedenCfgGroups.cpp"
 		};
+	};
+};
+
+class gm_VehicleInsignias_base;
+class gm_vehicleInsignias_nations : gm_VehicleInsignias_base
+{
+	class njt_dtfcw_insignia_sweden
+	{
+		author = "NikkoJT";
+		name = "Sweden";
+		picture = "";
+		texture = "DuctTapeFactionsCW\assets\insignia_sweden_ca.paa";
+		value = "njt_dtfcw_insignia_sweden";
 	};
 };

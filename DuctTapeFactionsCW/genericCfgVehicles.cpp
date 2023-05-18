@@ -62,13 +62,13 @@ class njt_dtfcw_hmg_02_bare : njt_dtfcw_hmg_02_f_base
 };
 
 // My tripod base class
-class njt_dtfcw_HMG_02_support_f_base : B_HMG_02_support_F
+class njt_dtfcw_hmg_02_support_f_base : B_HMG_02_support_F
 {
 	scope = 0;
 };
 
 // My tripod live class
-class njt_dtfcw_bag_tripodLow : njt_dtfcw_HMG_02_support_f_base
+class njt_dtfcw_bag_tripodlow : njt_dtfcw_hmg_02_support_f_base
 {
 	displayName = "Folded Tripod (Low, Green)";
 	scope = 2;
@@ -85,14 +85,14 @@ class njt_dtfcw_bag_tripodLow : njt_dtfcw_HMG_02_support_f_base
 };
 
 // My weaponbag base class
-class njt_dtfcw_HMG_02_weapon_F_base : B_HMG_02_weapon_F
+class njt_dtfcw_hmg_02_weapon_f_base : B_HMG_02_weapon_F
 {
 	scope = 0;
 	class assembleInfo;
 };
 
 // My weaponbag live class
-class njt_dtfcw_bag_HMG_02_bare : njt_dtfcw_HMG_02_weapon_F_base
+class njt_dtfcw_bag_hmg_02_bare : njt_dtfcw_hmg_02_weapon_f_base
 {
 	displayName = "M2 HMG .50 (Bare)";
 	scope = 2;

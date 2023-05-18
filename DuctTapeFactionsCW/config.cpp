@@ -12,7 +12,7 @@ class CfgPatches
 
 // Macros
 #define ITEM_2(a) a, a
-#define ITEM_2(a) a, a, a
+#define ITEM_3(a) a, a, a
 #define ITEM_4(a) a, a, a, a
 #define ITEM_6(a) a, a, a, a, a, a
 

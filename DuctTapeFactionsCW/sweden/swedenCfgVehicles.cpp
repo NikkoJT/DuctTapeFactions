@@ -1450,6 +1450,8 @@ class njt_dtfcw_sweden_engineer : njt_dtfcw_sweden_soldier_base
 	scope = 2;
 	backpack = "njt_dtfcw_B_Kitbag_sgg_engineer";
 	uniformClass = "U_B_CTRG_Soldier_urb_3_F";
+	canDeactivateMines = 1;
+	engineer = 1;
 	weapons[] += {
 		njt_dtfcw_gm_g3a4a1_ris_blk_holo,
 		hgun_P07_blk_F,
@@ -1494,6 +1496,7 @@ class njt_dtfcw_sweden_demo : njt_dtfcw_sweden_soldier_base
 	displayName = "Sapper";
 	scope = 2;
 	backpack = "njt_dtfcw_B_Kitbag_sgg_demo";
+	canDeactivateMines = 1;
 	weapons[] += {
 		njt_dtfcw_gm_g3a4a1_ris_blk_holo,
 		hgun_P07_blk_F,
@@ -1710,6 +1713,7 @@ class njt_dtfcw_sweden_sfbreacher : njt_dtfcw_sweden_sfsoldier_base
 {
 	displayName = "Ranger Breacher";
 	scope = 2;
+	canDeactivateMines = 1;
 	weapons[] += {
 		gm_mp5sd3_blk,
 		njt_dtfcw_hgun_p07_blk_f_kacn

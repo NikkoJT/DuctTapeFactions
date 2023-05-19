@@ -124,7 +124,7 @@ class gm_vehicleInsignias_nations : gm_VehicleInsignias_base
 		author = "NikkoJT";
 		name = "Sweden";
 		picture = "";
-		texture = "DuctTapeFactionsCW\assets\insignia_sweden_ca.paa";
+		texture = "\DuctTapeFactionsCW\assets\insignia_sweden_ca.paa";
 		value = "njt_dtfcw_insignia_sweden";
 	};
 };

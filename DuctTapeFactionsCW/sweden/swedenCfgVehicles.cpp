@@ -1064,10 +1064,23 @@ class njt_dtfcw_sweden_helicrew : njt_dtfcw_sweden_soldier_base
 };
 
 class US85_Helicopter_Base_H;
-class US85_H60;
+class US85_H60 : US85_Helicopter_Base_H
+{
+	class Attributes
+	{
+		class US85_attrEmblem;
+		class US85_attrMark;
+		class US85_attrNtlty;
+	};
+};
 class US85_UH60 : US85_H60
 {
-	class Attributes;
+	class Attributes : Attributes
+	{
+		class US85_attrEmblem : US85_attrEmblem {};
+		class US85_attrMark : US85_attrMark {};
+		class US85_attrNtlty : US85_attrNtlty {};
+	};
 };
 
 class njt_dtfcw_sweden_uh60 : US85_UH60
@@ -1077,11 +1090,12 @@ class njt_dtfcw_sweden_uh60 : US85_UH60
 	displayName = "Hkp 16A (Unarmed)";
 	displayNameShort = "Hkp 16";
 	descriptionShort = "A Swedish import of the popular American UH-60A.";
+	hiddenSelectionsTextures[] = {"csla_afmc_air\uh60\data\uh60a_engine_co.paa","csla_afmc_air\uh60\data\uh60a_fuselage_co.paa","csla_afmc_air\uh60\data\uh60a_interior_co.paa","csla_afmc_air\uh60\data\uh60a_navijak_co.paa","csla_afmc_air\uh60\data\esss_co.paa","","","","njt_dtfcw\assets\insignia_sweden_ca.paa","njt_dtfcw\assets\insignia_sweden_ca.paa"};
 	class Attributes : Attributes
 	{
-		delete US85_attrNtlty;
+		class US85_attrEmblem : US85_attrEmblem {};
+		class US85_attrMark : US85_attrMark {};
 	};
-	hiddenSelectionsTextures[] = {"csla_afmc_air\uh60\data\uh60a_engine_co.paa","csla_afmc_air\uh60\data\uh60a_fuselage_co.paa","csla_afmc_air\uh60\data\uh60a_interior_co.paa","csla_afmc_air\uh60\data\uh60a_navijak_co.paa","csla_afmc_air\uh60\data\esss_co.paa","","","","njt_dtfcw\assets\insignia_sweden_ca.paa","njt_dtfcw\assets\insignia_sweden_ca.paa"};
 	class TransportWeapons
 	{
 		class _xx_US85_M136
@@ -1147,7 +1161,12 @@ class njt_dtfcw_sweden_uh60 : US85_UH60
 };
 class US85_UH60M240 : US85_UH60
 {
-	class Attributes;
+	class Attributes : Attributes
+	{
+		class US85_attrEmblem : US85_attrEmblem {};
+		class US85_attrMark : US85_attrMark {};
+		class US85_attrNtlty : US85_attrNtlty {};
+	};
 };
 class njt_dtfcw_sweden_uh60m240 : US85_UH60M240
 {
@@ -1156,11 +1175,12 @@ class njt_dtfcw_sweden_uh60m240 : US85_UH60M240
 	displayName = "Hkp 16A (M240)";
 	displayNameShort = "Hkp 16";
 	descriptionShort = "A Swedish import of the popular American UH-60A.";
+	hiddenSelectionsTextures[] = {"csla_afmc_air\uh60\data\uh60a_engine_co.paa","csla_afmc_air\uh60\data\uh60a_fuselage_co.paa","csla_afmc_air\uh60\data\uh60a_interior_co.paa","csla_afmc_air\uh60\data\uh60a_navijak_co.paa","csla_afmc_air\uh60\data\esss_co.paa","","","","njt_dtfcw\assets\insignia_sweden_ca.paa","njt_dtfcw\assets\insignia_sweden_ca.paa"};
 	class Attributes : Attributes
 	{
-		delete US85_attrNtlty;
+		class US85_attrEmblem : US85_attrEmblem {};
+		class US85_attrMark : US85_attrMark {};
 	};
-	hiddenSelectionsTextures[] = {"csla_afmc_air\uh60\data\uh60a_engine_co.paa","csla_afmc_air\uh60\data\uh60a_fuselage_co.paa","csla_afmc_air\uh60\data\uh60a_interior_co.paa","csla_afmc_air\uh60\data\uh60a_navijak_co.paa","csla_afmc_air\uh60\data\esss_co.paa","","","","njt_dtfcw\assets\insignia_sweden_ca.paa","njt_dtfcw\assets\insignia_sweden_ca.paa"};
 	class TransportWeapons
 	{
 		class _xx_US85_M136

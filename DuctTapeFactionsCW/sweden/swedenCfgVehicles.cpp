@@ -191,7 +191,7 @@ class njt_dtfcw_b_assaultpack_sgg_m249 : B_AssaultPack_sgg
 		class _xx_200Rnd_556x45_Box_F
 		{
 			count = 3;
-			magazine = "200Rnd_556x45_Box_F"
+			magazine = "200Rnd_556x45_Box_F";
 		};
 	};
 };
@@ -204,12 +204,12 @@ class njt_dtfcw_b_assaultpack_sgg_medic : B_AssaultPack_sgg
 		class _xx_firstaidkit
 		{
 			count = 6;
-			name = "FirstAidKit"
+			name = "FirstAidKit";
 		};
 		class _xx_medikit
 		{
 			count = 1;
-			name = "Medikit"
+			name = "Medikit";
 		};
 	};
 };
@@ -222,7 +222,7 @@ class njt_dtfcw_b_kitbag_sgg_spmg : B_Kitbag_sgg
 		class _xx_130rnd_338_mag
 		{
 			count = 3;
-			magazine = "130Rnd_338_Mag"
+			magazine = "130Rnd_338_Mag";
 		};
 	};
 };
@@ -235,7 +235,7 @@ class njt_dtfcw_b_kitbag_sgg_m249 : B_Kitbag_sgg
 		class _xx_200Rnd_556x45_Box_F
 		{
 			count = 3;
-			magazine = "200Rnd_556x45_Box_F"
+			magazine = "200Rnd_556x45_Box_F";
 		};
 	};
 };
@@ -248,12 +248,12 @@ class njt_dtfcw_b_kitbag_sgg_medic : B_Kitbag_sgg
 		class _xx_firstaidkit
 		{
 			count = 6;
-			name = "FirstAidKit"
+			name = "FirstAidKit";
 		};
 		class _xx_medikit
 		{
 			count = 1;
-			name = "Medikit"
+			name = "Medikit";
 		};
 	};
 };
@@ -266,12 +266,12 @@ class njt_dtfcw_b_kitbag_sgg_engineer : B_Kitbag_sgg
 		class _xx_toolkit
 		{
 			count = 1;
-			magazine = "Toolkit"
+			magazine = "Toolkit";
 		};
 		class _xx_gm_boltcutter
 		{
 			count = 1;
-			magazine = "gm_boltcutter"
+			magazine = "gm_boltcutter";
 		};
 	};
 };
@@ -284,12 +284,12 @@ class njt_dtfcw_b_kitbag_sgg_demo : B_Kitbag_sgg
 		class _xx_SatchelCharge_Remote_Mag
 		{
 			count = 2;
-			magazine = "SatchelCharge_Remote_Mag"
+			magazine = "SatchelCharge_Remote_Mag";
 		};
 		class _xx_ClaymoreDirectionalMine_Remote_Mag
 		{
 			count = 2;
-			magazine = "ClaymoreDirectionalMine_Remote_Mag"
+			magazine = "ClaymoreDirectionalMine_Remote_Mag";
 		};
 	};
 };
@@ -302,12 +302,12 @@ class njt_dtfcw_b_kitbag_sgg_maaws : B_Kitbag_sgg
 		class _xx_MRAWS_HEAT_F
 		{
 			count = 2;
-			magazine = "MRAWS_HEAT_F"
+			magazine = "MRAWS_HEAT_F";
 		};
 		class _xx_MRAWS_HE_F
 		{
 			count = 2;
-			magazine = "MRAWS_HE_F"
+			magazine = "MRAWS_HE_F";
 		};
 	};
 };
@@ -1063,8 +1063,13 @@ class njt_dtfcw_sweden_helicrew : njt_dtfcw_sweden_soldier_base
 	};
 };
 
+class US85_Helicopter_Base_H;
 class US85_H60;
-class US85_UH60;
+class US85_UH60 : US85_H60
+{
+	class Attributes;
+};
+
 class njt_dtfcw_sweden_uh60 : US85_UH60
 {
 	faction = "njt_fc_sweden";
@@ -1072,6 +1077,11 @@ class njt_dtfcw_sweden_uh60 : US85_UH60
 	displayName = "Hkp 16A (Unarmed)";
 	displayNameShort = "Hkp 16";
 	descriptionShort = "A Swedish import of the popular American UH-60A.";
+	class Attributes : Attributes
+	{
+		delete US85_attrNtlty;
+	};
+	hiddenSelectionsTextures[] = {"csla_afmc_air\uh60\data\uh60a_engine_co.paa","csla_afmc_air\uh60\data\uh60a_fuselage_co.paa","csla_afmc_air\uh60\data\uh60a_interior_co.paa","csla_afmc_air\uh60\data\uh60a_navijak_co.paa","csla_afmc_air\uh60\data\esss_co.paa","","","","njt_dtfcw\assets\insignia_sweden_ca.paa","njt_dtfcw\assets\insignia_sweden_ca.paa"};
 	class TransportWeapons
 	{
 		class _xx_US85_M136
@@ -1135,7 +1145,10 @@ class njt_dtfcw_sweden_uh60 : US85_UH60
 		};
 	};
 };
-class US85_UH60M240;
+class US85_UH60M240 : US85_UH60
+{
+	class Attributes;
+};
 class njt_dtfcw_sweden_uh60m240 : US85_UH60M240
 {
 	faction = "njt_fc_sweden";
@@ -1143,6 +1156,11 @@ class njt_dtfcw_sweden_uh60m240 : US85_UH60M240
 	displayName = "Hkp 16A (M240)";
 	displayNameShort = "Hkp 16";
 	descriptionShort = "A Swedish import of the popular American UH-60A.";
+	class Attributes : Attributes
+	{
+		delete US85_attrNtlty;
+	};
+	hiddenSelectionsTextures[] = {"csla_afmc_air\uh60\data\uh60a_engine_co.paa","csla_afmc_air\uh60\data\uh60a_fuselage_co.paa","csla_afmc_air\uh60\data\uh60a_interior_co.paa","csla_afmc_air\uh60\data\uh60a_navijak_co.paa","csla_afmc_air\uh60\data\esss_co.paa","","","","njt_dtfcw\assets\insignia_sweden_ca.paa","njt_dtfcw\assets\insignia_sweden_ca.paa"};
 	class TransportWeapons
 	{
 		class _xx_US85_M136

@@ -16,7 +16,7 @@ class njt_names_sweden
 		hans = "Hans";
 		harald = "Harald";
 		olaf = "Olaf";
-		magnus = "Magnus"
+		magnus = "Magnus";
 		erik =  "Erik";
 		marten = "Marten";
 		paul = "Paul";

@@ -1732,6 +1732,12 @@ class njt_dtfcw_sweden_sfbreacher : njt_dtfcw_sweden_sfsoldier_base
 		ITEM_4(gm_handgrenade_frag_dm51a1),
 		ITEM_2(SmokeShell)
 	};
+	items[] += {
+		MineDetector
+	};
+	respawnItems[] += {
+		MineDetector
+	};
 	linkedItems[] += {
 		gm_ge_facewear_dustglasses
 	};

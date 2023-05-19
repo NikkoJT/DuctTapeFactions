@@ -418,7 +418,7 @@ class SF
 			position[] = {-15,-15,0};
 			rank = "PRIVATE";
 			side = 1;
-			vehicle = "njt_dtfcw_sweden_sfsoldier";
+			vehicle = "njt_dtfcw_sweden_sfrifleman";
 		};
 	};
 };

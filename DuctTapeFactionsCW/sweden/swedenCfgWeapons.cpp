@@ -8,13 +8,14 @@ class gm_g3ka4a1_ris_base;
 class gm_g3ka4a1_ris_blk;
 class hgun_P07_blk_F;
 class arifle_SPAR_03_blk_F;
+class LMG_03_base_F;
 class LMG_03_F;
 
 class njt_dtfcw_lmg_03_f : LMG_03_F
 {
 	scope = 2;
 	displayName = "Ksp 90B 5.56 mm";
-	modes[] = {"FullAutoFast","FullAutoSlow","close","short","medium","far_optic1","far_optic2"};
+	modes[] = {"FullAutoFast","close","short","medium","far_optic1","far_optic2"};
 	class FullAutoSlow{};
 };
 class njt_dtfcw_lmg_03_f_arco_laser_supp : njt_dtfcw_lmg_03_f
@@ -166,6 +167,7 @@ class njt_dtfcw_nlaw_disposable : launch_nlaw_f
 	gm_spentLauncherType = "njt_dtfcw_nlaw_disposable_spent";
 	displayName = "Rb 57";
 	descriptionShort = "Single-use lock-on anti-tank weapon.";
+	reloadAction = "Default";
 	class EventHandlers
 	{
 		class njt_dtfcw_nlaw_eventhandlers
@@ -191,9 +193,9 @@ class njt_dtfcw_nlaw_disposable_spent : launch_nlaw_f
 	displayName = "Rb 57 (Spent)";
 	descriptionShort = "This weapon is expended and cannot be reused.";
 	scope = 1;
-	weaponInfoType = "RscWeaponEmpty";
 	magazines[] = {"njt_dtfcw_nlaw_dummy"};
 	magazineWell[] = {};
+	reloadAction = "Default";
 	class VirtualArsenal
 	{
 		class EventHandlers

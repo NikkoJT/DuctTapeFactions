@@ -199,17 +199,17 @@ class njt_dtfcw_b_assaultpack_sgg_m249 : B_AssaultPack_sgg
 class njt_dtfcw_b_assaultpack_sgg_medic : B_AssaultPack_sgg
 {
 	scope = 1;
-	class TransportMagazines
+	class TransportItems
 	{
 		class _xx_firstaidkit
 		{
 			count = 6;
-			magazine = "FirstAidKit"
+			name = "FirstAidKit"
 		};
 		class _xx_medikit
 		{
 			count = 1;
-			magazine = "Medikit"
+			name = "Medikit"
 		};
 	};
 };
@@ -243,17 +243,17 @@ class njt_dtfcw_b_kitbag_sgg_m249 : B_Kitbag_sgg
 class njt_dtfcw_b_kitbag_sgg_medic : B_Kitbag_sgg
 {
 	scope = 1;
-	class TransportMagazines
+	class TransportItems
 	{
 		class _xx_firstaidkit
 		{
 			count = 6;
-			magazine = "FirstAidKit"
+			name = "FirstAidKit"
 		};
 		class _xx_medikit
 		{
 			count = 1;
-			magazine = "Medikit"
+			name = "Medikit"
 		};
 	};
 };

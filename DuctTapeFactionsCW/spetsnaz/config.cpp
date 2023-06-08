@@ -67,6 +67,14 @@ class cfgWeapons
 	#include "spetsnazCfgWeapons.cpp"
 };
 
+class cfgEditorSubcategories
+{
+	class njt_dtfcw_EdSubCat_Personnel_SpecialForcesNight
+	{
+		DisplayName = "Men (Special Forces, Night)";
+	};
+};
+
 class cfgGroups
 {
 	class East

@@ -694,7 +694,7 @@ class njt_dtfcw_sweden_machinegunner : njt_dtfcw_sweden_soldier_base
 {
 	displayName = "Machinegunner";
 	scope = 2;
-	backpack = "B_Kitbag_sgg_m249";
+	backpack = "njt_dtfcw_B_Kitbag_sgg_m249";
 	uniformClass = "U_B_CTRG_Soldier_urb_2_F";
 	weapons[] += {
 		US85_M249,

@@ -347,9 +347,9 @@ class njt_dtfcw_spetsnaz_soldier_base : SoldierEB
 	displayName = "Spetsnaz";
 	faction = "gm_fc_ur";
 	genericNames = "RussianMen";
-	uniformClass = "gm_xx_uniform_soldier_bdu_80_oli";
+	uniformClass = "gm_xx_uniform_soldier_bdu_nogloves_80_oli";
 	editorSubcategory = "EdSubCat_Personnel_SpecialForces";
-	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_soldier_bdu_80";
+	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_soldier_bdu_nogloves_80";
 	faceType = "Man_A3";
 	icon = "iconMan";
 	picture = "";
@@ -513,7 +513,7 @@ class njt_dtfcw_spetsnaz_medic : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Combat Medic";
 	scope = 2;
-	backpack = "B_Kitbag_sgg_medic";
+	backpack = "njt_dtfcw_B_Kitbag_sgg_medic";
 	attendant = 1;
 	weapons[] += {
 		njt_dtfcw_gm_ak74n_wud_pka_supp,
@@ -598,6 +598,7 @@ class njt_dtfcw_spetsnaz_squadleader : njt_dtfcw_spetsnaz_soldier_base
 	displayName = "Spetsnaz Squad Leader";
 	scope = 2;
 	uniformClass = "gm_xx_uniform_soldier_bdu_rolled_80_oli";
+	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_soldier_bdu_rolled_80";
 	backpack = "CSLA_bpKnapsack";
 	weapons[] += {
 		njt_dtfcw_gm_ak74n_wud_pka_supp,
@@ -677,6 +678,7 @@ class njt_dtfcw_spetsnaz_machinegunner : njt_dtfcw_spetsnaz_soldier_base
 	scope = 2;
 	backpack = "njt_dtfcw_B_Kitbag_sgg_rpk74";
 	uniformClass = "gm_xx_uniform_soldier_bdu_rolled_80_oli";
+	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_soldier_bdu_rolled_80";
 	weapons[] += {
 		njt_dtfcw_gm_rpk74n_wud_pka_supp,
 		gm_pm_blk
@@ -719,6 +721,7 @@ class njt_dtfcw_spetsnaz_jtac : njt_dtfcw_spetsnaz_soldier_base
 	scope = 2;
 	backpack = "gm_gc_backpack_r105m_brn";
 	uniformClass = "gm_xx_uniform_soldier_bdu_rolled_80_oli";
+	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_soldier_bdu_rolled_80";
 	weapons[] += {
 		njt_dtfcw_gm_rpk74n_wud_pka_supp,
 		gm_pm_blk,
@@ -802,7 +805,9 @@ class njt_dtfcw_spetsnaz_antitank_9k111 : njt_dtfcw_spetsnaz_soldier_base
 class njt_dtfcw_spetsnaz_helicrew : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Helicrew";
-	uniformClass = "gm_ge_uniform_pilot_commando_rolled_oli";
+	uniformClass = "gm_ge_uniform_pilot_commando_rolled_oli"
+	hiddenSelectionsTextures[] = {"\gm\gm_characters\gm_ge_characters\data\uniform\gm_ge_uniform_pilot_commando_oli_co"};
+	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_pilot_commando_rolled";
 	scope = 2;
 	weapons[] += {
 		arifle_AKS_F,
@@ -1028,6 +1033,7 @@ class njt_dtfcw_spetsnaz_assistant_mmg : njt_dtfcw_spetsnaz_soldier_base
 	scope = 2;
 	backpack = "njt_dtfcw_B_Kitbag_sgg_pkm";
 	uniformClass = "gm_xx_uniform_soldier_bdu_rolled_80_oli";
+	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_soldier_bdu_rolled_80";
 	weapons[] += {
 		njt_dtfcw_gm_ak74n_wud_pka_supp,
 		gm_pm_blk,
@@ -1159,7 +1165,9 @@ class njt_dtfcw_spetsnaz_rifleman_night : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Commando (Night)";
 	scope = 2;
+	editorSubcategory = "njt_dtfcw_EdSubCat_Personnel_SpecialForcesNight";
 	uniformClass = "gm_xx_uniform_soldier_bdu_80_oli";
+	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_soldier_bdu_80";
 	weapons[] += {
 		njt_dtfcw_gm_ak74n_wud_zln1k_supp,
 		gm_pm_blk
@@ -1196,8 +1204,10 @@ class njt_dtfcw_spetsnaz_antitank_rpg7_night : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Commando (AT) (Night)";
 	scope = 2;
+	editorSubcategory = "njt_dtfcw_EdSubCat_Personnel_SpecialForcesNight";
 	backpack = "njt_dtfcw_b_kitbag_sgg_rpg7";
 	uniformClass = "gm_xx_uniform_soldier_bdu_80_oli";
+	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_soldier_bdu_80";
 	weapons[] += {
 		njt_dtfcw_gm_ak74n_wud_zln1k_supp,
 		gm_pm_blk,
@@ -1239,7 +1249,9 @@ class njt_dtfcw_spetsnaz_marksman_night : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Marksman (Night)";
 	scope = 2;
+	editorSubcategory = "njt_dtfcw_EdSubCat_Personnel_SpecialForcesNight";
 	uniformClass = "gm_xx_uniform_soldier_bdu_80_oli";
+	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_soldier_bdu_80";
 	weapons[] += {
 		njt_dtfcw_gm_svd_wud_nspu_supp,
 		gm_pm_blk
@@ -1278,8 +1290,10 @@ class njt_dtfcw_spetsnaz_machinegunner_night : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Light Machinegunner (Night)";
 	scope = 2;
+	editorSubcategory = "njt_dtfcw_EdSubCat_Personnel_SpecialForcesNight";
 	backpack = "njt_dtfcw_B_Kitbag_sgg_rpk74";
 	uniformClass = "gm_xx_uniform_soldier_bdu_80_oli";
+	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_soldier_bdu_80";
 	weapons[] += {
 		njt_dtfcw_gm_rpk74n_wud_zln1k_supp,
 		gm_pm_blk
@@ -1318,6 +1332,7 @@ class njt_dtfcw_spetsnaz_teamleader_night : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Team Leader (Night)";
 	scope = 2;
+	editorSubcategory = "njt_dtfcw_EdSubCat_Personnel_SpecialForcesNight";
 	weapons[] += {
 		njt_dtfcw_gm_ak74n_wud_zln1k_supp,
 		gm_pn3_gry,
@@ -1359,6 +1374,7 @@ class njt_dtfcw_spetsnaz_medic_night : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Combat Medic (Night)";
 	scope = 2;
+	editorSubcategory = "njt_dtfcw_EdSubCat_Personnel_SpecialForcesNight";
 	backpack = "njt_dtfcw_B_Kitbag_sgg_medic";
 	attendant = 1;
 	weapons[] += {
@@ -1399,6 +1415,7 @@ class njt_dtfcw_spetsnaz_engineer_night : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Engineer (Night)";
 	scope = 2;
+	editorSubcategory = "njt_dtfcw_EdSubCat_Personnel_SpecialForcesNight";
 	backpack = "njt_dtfcw_B_Kitbag_sgg_engineer";
 	canDeactivateMines = 1;
 	engineer = 1;
@@ -1446,6 +1463,7 @@ class njt_dtfcw_spetsnaz_demo_night : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Sapper (Night)";
 	scope = 2;
+	editorSubcategory = "njt_dtfcw_EdSubCat_Personnel_SpecialForcesNight";
 	backpack = "njt_dtfcw_B_Kitbag_sgg_demo";
 	canDeactivateMines = 1;
 	weapons[] += {

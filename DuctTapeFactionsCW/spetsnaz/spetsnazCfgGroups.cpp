@@ -1,6 +1,6 @@
-class Infantry
+class SF
 {
-	name = "SF";
+	name = "Special Forces";
 	class njt_dtfcw_spetsnaz_fireteam
 	{
 		faction = "gm_fc_ur";

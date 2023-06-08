@@ -28,8 +28,7 @@ class CfgPatches
 			"njt_dtfcw_spetsnaz_engineer_night",
 			"njt_dtfcw_spetsnaz_demo_night",
 			"njt_dtfcw_spetsnaz_antitank_9k111",
-			"njt_dtfcw_spetsnaz_medic_night",
-			"njt_dtfcw_spetsnaz_
+			"njt_dtfcw_spetsnaz_medic_night"
 		};
 		weapons[] = {
 		};
@@ -70,7 +69,7 @@ class cfgWeapons
 
 class cfgGroups
 {
-	class West
+	class East
 	{
 		class gm_ur_army
 		{

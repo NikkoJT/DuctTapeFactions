@@ -3,7 +3,7 @@ class gm_ak74n_base;
 class gm_ak74n_wud;
 class gm_rpk74_base;
 class gm_rpk74n_base;
-class gm_rpk74_wud;
+class gm_rpk74n_wud;
 class gm_svd_base;
 class gm_svd_wud;
 

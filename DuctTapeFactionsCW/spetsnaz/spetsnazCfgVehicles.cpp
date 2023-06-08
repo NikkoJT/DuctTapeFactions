@@ -15,6 +15,7 @@ class Building;
 class Strategic;
 class ReammoBox;
 class Bag_Base;
+class Helicopter_Base_H;
 class Weapon_Bag_Base;
 class gm_staticWeapon_base;
 class gm_staticATGM_base;
@@ -25,9 +26,15 @@ class gm_dshkm_aatripod_base;
 class gm_wheeled_base;
 class gm_wheeled_car_base;
 class gm_uaz469_base;
-class gm_uaz469_cargo_base;
+class gm_uaz469_cargo_base : gm_uaz469_base
+{
+	class animationSources;
+};
 class gm_uaz469_armed_base;
-class gm_uaz469_dshkm_base;
+class gm_uaz469_dshkm_base : gm_uaz469_armed_base
+{
+	class animationSources;
+};
 class gm_pl_army_uaz469_dshkm_base : gm_uaz469_dshkm_base
 {
 	class animationSources : animationSources
@@ -282,7 +289,7 @@ class njt_dtfcw_gm_fagot_launcher_tripod_spetsnaz : gm_fagot_launcher_tripod_bas
 	side = 0;
 };
 
-lass njt_dtfcw_gm_spg9_tripod_spetsnaz : gm_spg9_tripod_base
+class njt_dtfcw_gm_spg9_tripod_spetsnaz : gm_spg9_tripod_base
 {
 	scope = 2;
 	scopeCurator = 2;
@@ -342,6 +349,7 @@ class njt_dtfcw_spetsnaz_soldier_base : SoldierEB
 	genericNames = "RussianMen";
 	uniformClass = "gm_xx_uniform_soldier_bdu_80_oli";
 	editorSubcategory = "EdSubCat_Personnel_SpecialForces";
+	model = "\gm\gm_characters\gm_ge_characters\gm_ge_uniform_soldier_bdu_80";
 	faceType = "Man_A3";
 	icon = "iconMan";
 	picture = "";
@@ -667,7 +675,7 @@ class njt_dtfcw_spetsnaz_machinegunner : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Light Machinegunner";
 	scope = 2;
-	backpack = "B_Kitbag_sgg_rpk74";
+	backpack = "njt_dtfcw_B_Kitbag_sgg_rpk74";
 	uniformClass = "gm_xx_uniform_soldier_bdu_rolled_80_oli";
 	weapons[] += {
 		njt_dtfcw_gm_rpk74n_wud_pka_supp,
@@ -833,8 +841,8 @@ class CSLA_Mi24_base : CSLA_Helicopter_Base_H
 {
 	class Attributes
 	{
-		class CSLA_attrEmblem;
-		class CSLA_attrMark;
+		class CSLA_attrEmblems1;
+		class CSLA_attrEmblems2;
 		class CSLA_attrNtlty;
 		class CSLA_attrTacNum;
 	};
@@ -844,14 +852,25 @@ class CSLA_Mi24V : CSLA_Mi24_base
 {
 	class Attributes : Attributes
 	{
-		class CSLA_attrEmblem : CSLA_attrEmblem {};
-		class CSLA_attrMark : CSLA_attrMark {};
+		class CSLA_attrEmblems1 : CSLA_attrEmblems1 {};
+		class CSLA_attrEmblems2 : CSLA_attrEmblems2 {};
 		class CSLA_attrNtlty : CSLA_attrNtlty {};
 		class CSLA_attrTacNum : CSLA_attrTacNum {};
 	};
 	class Components : Components
 	{
-		class TransportPylons;
+		class TransportPylonsComponent
+		{
+			class Pylons
+			{
+				class Pylons3;
+				class Pylons2;
+				class Pylons1;				
+				class Pylons4;
+				class Pylons5;
+				class Pylons6;
+			};
+		};
 	};
 	
 };
@@ -862,27 +881,40 @@ class njt_dtfcw_spetsnaz_mi24v : CSLA_Mi24V
 	crew = "njt_dtfcw_spetsnaz_helicrew";
 	displayName = "Mi-24V";
 	displayNameShort = "Mi-24V";
+	CSLA_Mi24Vntlty = "CSLA_misc\signs\national\big\sov_star_red_ca.paa";
 	descriptionShort = "A heavy gunship used as transport by Spetsnaz teams.";
 	hiddenSelectionsTextures[] = {"csla_air2\mi24\data\mi24v_body1_co.paa","csla_air2\mi24\data\mi24v_body2_co.paa","csla_air2\mi24\data\mi24v_body3_co.paa","csla_air2\mi24\data\mi24v_det_co.paa","CSLA_misc\signs\empty_ca.paa","CSLA_misc\signs\national\big\sov_star_red_ca.paa"};
 	class Attributes : Attributes
 	{
-		class CSLA_attrEmblem : CSLA_attrEmblem {};
-		class CSLA_attrMark : CSLA_attrMark {};
+		class CSLA_attrEmblems1 : CSLA_attrEmblems1 {};
+		class CSLA_attrEmblems2 : CSLA_attrEmblems2 {};
+		class CSLA_attrTacNum : CSLA_attrTacNum {};
 	};
+	class textureSources{};
 	class Components : Components
 	{
-		class TransportPylons : TransportPylons
+		class TransportPylonsComponent : TransportPylonsComponent
 		{
 			class Pylons : Pylons
 			{
-				class Pylons3 : Pylons3
+				class Pylons1 : Pylons1 
 				{
-					hardpoints[] = {"CSLA_9K114_pod","gm_mi2_9m32_left"};
+					hardpoints[] = { "CSLA_UB16_pod","CSLA_UB32_pod","CSLA_LRM122_pod","CSLA_B8V20_pod","CSLA_FAB250_pod","CSLA_FAB500_pod","CSLA_UPK23_250_pod","CSLA_GUV8700_MG_pod","CSLA_GUV8700_213PA_pod","CSLA_9K114_podC","gm_mi2_pylon" };
 				};
-				class Pylons6 : Pylons6
+				class Pylons2 : Pylons2 
 				{
-					hardpoints[] = {"CSLA_9K114_pod","gm_mi2_9m32_right"};
+					hardpoints[] = { "CSLA_UB16_pod","CSLA_UB32_pod","CSLA_LRM122_pod","CSLA_B8V20_pod","CSLA_FAB250_pod","CSLA_FAB500_pod","CSLA_UPK23_250_pod","CSLA_GUV8700_MG_pod","CSLA_GUV8700_213PA_pod","CSLA_9K114_podC","gm_mi2_pylon" };
 				};
+				class Pylons3 : Pylons3 {};
+				class Pylons4 : Pylons4 
+				{
+					hardpoints[] = { "CSLA_UB16_pod","CSLA_UB32_pod","CSLA_LRM122_pod","CSLA_B8V20_pod","CSLA_FAB250_pod","CSLA_FAB500_pod","CSLA_UPK23_250_pod","CSLA_GUV8700_MG_pod","CSLA_GUV8700_213PA_pod","CSLA_9K114_podC","gm_mi2_pylon" };
+				};
+				class Pylons5 : Pylons5 
+				{
+					hardpoints[] = { "CSLA_UB16_pod","CSLA_UB32_pod","CSLA_LRM122_pod","CSLA_B8V20_pod","CSLA_FAB250_pod","CSLA_FAB500_pod","CSLA_UPK23_250_pod","CSLA_GUV8700_MG_pod","CSLA_GUV8700_213PA_pod","CSLA_9K114_podC","gm_mi2_pylon" };
+				};
+				class Pylons6 : Pylons6 {};
 			};
 		};
 	};
@@ -1246,7 +1278,7 @@ class njt_dtfcw_spetsnaz_machinegunner_night : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Light Machinegunner (Night)";
 	scope = 2;
-	backpack = "B_Kitbag_sgg_rpk74";
+	backpack = "njt_dtfcw_B_Kitbag_sgg_rpk74";
 	uniformClass = "gm_xx_uniform_soldier_bdu_80_oli";
 	weapons[] += {
 		njt_dtfcw_gm_rpk74n_wud_zln1k_supp,
@@ -1287,12 +1319,12 @@ class njt_dtfcw_spetsnaz_teamleader_night : njt_dtfcw_spetsnaz_soldier_base
 	displayName = "Spetsnaz Team Leader (Night)";
 	scope = 2;
 	weapons[] += {
-		njt_dtfcw_gm_rpk74n_wud_zln1k_supp,
+		njt_dtfcw_gm_ak74n_wud_zln1k_supp,
 		gm_pn3_gry,
 		gm_df7x40_blk
 	};
 	respawnWeapons[] += {
-		njt_dtfcw_gm_rpk74n_wud_zln1k_supp,
+		njt_dtfcw_gm_ak74n_wud_zln1k_supp,
 		gm_pn3_gry,
 		gm_df7x40_blk
 	};
@@ -1327,7 +1359,7 @@ class njt_dtfcw_spetsnaz_medic_night : njt_dtfcw_spetsnaz_soldier_base
 {
 	displayName = "Spetsnaz Combat Medic (Night)";
 	scope = 2;
-	backpack = "B_Kitbag_sgg_medic";
+	backpack = "njt_dtfcw_B_Kitbag_sgg_medic";
 	attendant = 1;
 	weapons[] += {
 		njt_dtfcw_gm_ak74n_wud_zln1k_supp,
